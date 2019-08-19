@@ -1,0 +1,15 @@
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\bin\Debug\netstandard2.0\Cadastramento_MVVM.deps.json
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\bin\Debug\netstandard2.0\Cadastramento_MVVM.dll
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.csproj.CoreCompileInputs.cache
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.AssemblyInfoInputs.cache
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.AssemblyInfo.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Views\ClientListPage.xaml.g.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Views\ClientView.xaml.g.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Views\EditClientPage.xaml.g.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Views\InsertClientPage.xaml.g.cs
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.dll
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.pdb
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\bin\Debug\netstandard2.0\Cadastramento_MVVM.pdb
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\L04350\Desktop\Projetos\Cadastramento_MVVM\Cadastramento_MVVM\Cadastramento_MVVM\obj\Debug\netstandard2.0\Cadastramento_MVVM.csprojAssemblyReference.cache

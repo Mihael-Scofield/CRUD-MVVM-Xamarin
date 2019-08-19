@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cadastramento_MVVM.Views.InsertClientPage"
+             
+             xmlns:local="clr-namespace:Cadastramento_MVVM.Views"
+             Title="Cadastrar Cliente">
+
+    <StackLayout Margin="20">
+        
+        <local:ClientView/>
+
+        <Grid Margin="20, 35, 20, 20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="145" />
+                <ColumnDefinition Width="145" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="0" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="1"                   
+                   Text="Salvar"
+                   TextColor="White"                               
+                   BackgroundColor="#0f98d4"
+                   BorderColor="Black" 
+                   CornerRadius="7"
+                   BorderWidth="2"
+                   VerticalOptions="Center"
+                   x:Name="SaveButton"
+                   Command="{Binding InsertClientCommand}" />
+
+            <Button Text="Cancel"
+                   TextColor="White"                               
+                   BackgroundColor="#DB2543"
+                   BorderColor="Black" 
+                   CornerRadius="7"
+                   BorderWidth="2"
+                   VerticalOptions="Center"
+                   x:Name="CancelButton"
+                   Command="{Binding CancelInsertionCommand}" />
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cadastramento_MVVM.Views.EditClientPage"
+             
+             xmlns:local="clr-namespace:Cadastramento_MVVM.Views"
+             Title="Editar Cliente">
+    
+    <StackLayout Margin="20">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Cliente Número"
+                   TextColor="Black"
+                   FontSize="Medium" />
+
+            <Label Grid.Column="1"
+                   Text="{Binding Id}"
+                   TextColor="Black" 
+                   FontSize="Medium" />
+        </Grid>
+        
+        <local:ClientView/>
+
+        <Grid Margin="20, 35, 20, 20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="145" />
+                <ColumnDefinition Width="145" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="0" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Column="1"                   
+                   Text="Editar"
+                   TextColor="White"                               
+                   BackgroundColor="#0f98d4"
+                   BorderColor="Black" 
+                   CornerRadius="7"
+                   BorderWidth="2"
+                   VerticalOptions="Center"
+                   x:Name="EditButton"
+                   Command="{Binding EditClientCommand}" />
+
+            <Button Text="Deletar"
+                   TextColor="White"                               
+                   BackgroundColor="#DB2543"
+                   BorderColor="Black" 
+                   CornerRadius="7"
+                   BorderWidth="2"
+                   VerticalOptions="Center"
+                   x:Name="DeleteButton"
+                   Command="{Binding DeleteClientCommand}" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cadastramento_MVVM.Views.ClientView">
+    <ContentView.Content>
+
+        <StackLayout Margin="20">
+            <TableView Intent="Settings"
+                   HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection>
+                        <EntryCell x:Name="eName"
+                               Placeholder="Nome"
+                               Text="{Binding Name}" />
+                        <EntryCell x:Name="eAge"
+                               Placeholder="Idade"
+                               Text="{Binding Age}" />
+                        <EntryCell x:Name="ePhone"
+                               Placeholder="Telefone"
+                               Text="{Binding Phone}"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>

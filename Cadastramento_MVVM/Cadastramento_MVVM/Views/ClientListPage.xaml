@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cadastramento_MVVM.Views.ClientListPage"
+             
+             xmlns:local="clr-namespace:Cadastramento_MVVM.ViewModels"
+             BackgroundColor="White"
+             Title="Cadastros">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Text="Id"                      
+                     Order="Secondary"
+                     Command="{Binding OrderByIdCommand}"/>
+
+        <ToolbarItem Text="Nome"                      
+                     Order="Secondary"
+                     Command="{Binding OrderByNameCommand}"/>
+
+        <ToolbarItem Text="Idade"                      
+                     Order="Secondary"
+                     Command="{Binding OrderByAgeCommand}"/>
+
+        <ToolbarItem Icon="round_person_add_white_24.png"
+                     Order="Primary"
+                     Command="{Binding InsertClientCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+
+        <SearchBar x:Name="SearchBar"
+                   WidthRequest="1"
+                   TextColor="Black"
+                   Placeholder="Procure um cliente"
+                   SearchCommand="{Binding SearchCommand}" 
+                   SearchCommandParameter="{Binding Text, Source={x:Reference SearchBar}}">
+            <SearchBar.Behaviors>
+                <local:TextChangedBehavior/>
+            </SearchBar.Behaviors>
+        </SearchBar>
+
+        <ListView x:Name="listView" 
+                  HasUnevenRows="True"           
+                  SeparatorColor="Black"
+                  IsPullToRefreshEnabled="True"
+                  ItemsSource="{Binding ClientList}"
+                  SelectedItem="{Binding SelectedClient, Mode=TwoWay}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0"
+                                       Grid.Row="0"
+                                       Text="Id: "
+                                       TextColor="Black" 
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Column="1"
+                                       Grid.Row="0"
+                                       Text="{Binding Id}"
+                                       TextColor="Black" />
+
+                                <Label Grid.Column="0"
+                                       Grid.Row="1"
+                                       Text="Nome: "
+                                       TextColor="Black" 
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       Text="{Binding Name}"
+                                       TextColor="Black" />
+
+                                <Label Grid.Column="0"
+                                       Grid.Row="2"
+                                       Text="Idade: "
+                                       TextColor="Black"
+                                       FontAttributes="Bold"/>
+                                <Label Grid.Column="1"
+                                       Grid.Row="2"
+                                       Text="{Binding Age}"
+                                       TextColor="Black" />
+                            </Grid>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
