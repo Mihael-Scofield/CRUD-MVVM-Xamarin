@@ -1,5 +1,5 @@
 # Aplicativo de Cadastramento de Clientes (MVVM)
-Um aplicativo para android implementado em C# e Xamarin.Forms capaz de cadastrar, ler, atualizar e deletar clientes utilizando SQLite para isso.
+Um aplicativo para android implementado em C# e Xamarin.Forms capaz de cadastrar, ler, atualizar, deletar, buscar e ordenar clientes utilizando SQLite para isso.
 
 Implementado por Mihael Scofield de Azevedo.
 
